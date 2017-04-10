@@ -1,0 +1,28 @@
+/**
+ * @des: UI
+ * @author maicon
+ * @date 2016-07-15
+ */
+
+span,em,i {
+	display: inline-block;
+}
+.view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #EEF1F4;
+}
+// 单个按钮
+.u-button {
+	height: 0.9rem;
+	// line-height: 0.9rem;
+	text-align: center;
+	vertical-align: middle;
+	border-radius: 0.04rem;
+	font-size: 18px;
+	background: #358AD6;
+	color: white;
+}

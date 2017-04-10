@@ -1,0 +1,100 @@
+$bcolor:#5682D9;
+.m-menu {
+    font-size: 0.28rem;
+    .content {
+        height: 100%;
+    }
+    .demos-item {
+        background-color: #FFF;
+        height: 1rem;
+        line-height: 1rem;
+        font-size: 12px;
+        color: #9099B4;
+        .icon {
+            width: 0.94rem;
+            height: 1rem;
+        }
+        .components {
+            border-bottom: 1px solid #E6E6E6;
+            span {
+                color: #2D3859;
+            }
+        }
+    }
+    .demos-item:active {
+        background: darken(#fff, 10%);
+    }
+    a:nth-last-of-type(1) {
+        .components {
+            border: none;
+        }
+    }
+    .menu-pull-refresh {
+        background: url(../../assets/images/icon/icon-loading.png) center no-repeat;
+        background-size: 0.34rem 0.34rem;
+    }
+    .menu-swiper {
+        background: url(../../assets/images/icon/icon-swiper.png) center no-repeat;
+        background-size: 0.4rem 0.22rem;
+    }
+    .menu-addressBook {
+        background: url(../../assets/images/icon/icon-addressBook.png) center no-repeat;
+        background-size: 0.31rem 0.32rem;
+    }
+    .menu-radio {
+        background: url(../../assets/images/icon/icon-radio.png) center no-repeat;
+        background-size: 0.32rem 0.32rem;
+    }
+    .menu-checkbox {
+        background: url(../../assets/images/icon/icon-checkbox.png) center no-repeat;
+        background-size: 0.32rem 0.32rem;
+    }
+    .menu-select-drop {
+        background: url(../../assets/images/icon/icon-select-drop.png) center no-repeat;
+        background-size: 0.32rem 0.24rem;
+    }
+    .menu-select-scroll {
+        background: url(../../assets/images/icon/icon-select-scroll.png) center no-repeat;
+        background-size: 0.34rem 0.28rem;
+    }
+    .menu-select-area {
+        background: url(../../assets/images/icon/icon-area.png) center no-repeat;
+        background-size: 0.3rem 0.36rem;
+    }
+    .menu-select-datatime {
+        background: url(../../assets/images/icon/icon-datatime.png) center no-repeat;
+        background-size: 0.34rem 0.32rem;
+    }
+    .menu-dialog {
+        background: url(../../assets/images/icon/icon-dialog.png) center no-repeat;
+        background-size: 0.34rem 0.32rem;
+    }
+    .menu-preview {
+        background: url(../../assets/images/icon/icon-preview.png) center no-repeat;
+        background-size: 0.34rem 0.24rem;
+    }
+    .menu-qrcode {
+        background: url(../../assets/images/icon/icon-qrcode.png) center no-repeat;
+        background-size: 0.29rem 0.29rem;
+    }
+    .menu-qq {
+        background: url(../../assets/images/icon/icon-qq.png) center no-repeat;
+        background-size: 0.29rem 0.29rem; 
+    }
+    .menu-announcement {
+        background: url(../../assets/images/icon/icon-announcement.png) center no-repeat;
+        background-size: 0.32rem 0.29rem; 
+    }
+    .menu-countdown {
+        background: url(../../assets/images/icon/icon-countdown.png) center no-repeat;
+        background-size: 0.28rem 0.32rem; 
+    }
+    .menu-uploadImg {
+        background: url(../../assets/images/icon/icon-fileImage.png) center no-repeat;
+        background-size: 0.36rem 0.26rem; 
+    }
+    .menu-editor {
+        background: url(../../assets/images/icon/icon-editor.png) center no-repeat;
+        background-size: 0.33rem 0.33rem; 
+    }
+}
