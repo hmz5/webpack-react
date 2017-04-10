@@ -27,6 +27,14 @@ const routeConfig = [{
         }, 'menu')
     }
 }, {
+    path: 'findDom',
+    getComponent(nextState, callback) {
+        require.ensure([], (require) => {
+            const app = require('../pages/findDom');
+            callback(null, app.default)
+        }, 'findDom')
+    }
+}, {
     path: 'reduxDemo',
     getComponent(nextState, callback) {
         require.ensure([], (require) => {
