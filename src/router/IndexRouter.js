@@ -35,6 +35,14 @@ const routeConfig = [{
         }, 'findDom')
     }
 }, {
+    path: 'routerDemo',
+    getComponent(nextState, callback) {
+        require.ensure([], (require) => {
+            const app = require('../pages/routerDemo');
+            callback(null, app.default)
+        }, 'routerDemo')
+    }
+}, {
     path: 'reduxDemo',
     getComponent(nextState, callback) {
         require.ensure([], (require) => {

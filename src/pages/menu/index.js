@@ -27,6 +27,14 @@ class menu extends Component {
 		                    </div>
 		                </div>
 		            </Link>
+		            <Link to={{ pathname: '/routerDemo', query: { id: '1' } }}>
+		                <div className="demos-item f-flex">
+		                    <div className="icon menu-pull-refresh"></div>
+		                    <div className="f-flex1 components">
+		                        <span>routerDemo</span>(router操作)
+		                    </div>
+		                </div>
+		            </Link>
 		            <Link to={{ pathname: '/reduxDemo' }}>
 		                <div className="demos-item f-flex">
 		                    <div className="icon menu-pull-refresh"></div>

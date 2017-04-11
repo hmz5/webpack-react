@@ -15,8 +15,18 @@ const todo = function(state, action) {
 const todos = function(state = initialState, action) {
 	switch(action.type) {
 		case 'ADD_TODO':
-			console.log([...state, todo(undefined, action)]);
+			// console.log([...state, todo(undefined, action)]);
 			return [...state, todo(undefined, action)]
+		case 'CHANGE_TODO':
+			// [...state][action.index]
+		
+			return [
+		        ...state.slice(0, action.index),
+		        Object.assign({}, state[action.index], {
+		          	completed: true
+		        }),
+		        ...state.slice(action.index + 1)
+		    ];
 		default: 
 			return state
 	}

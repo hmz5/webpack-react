@@ -1,13 +1,13 @@
 var path = require("path");
 var webpack = require("webpack");
-var HtmlWebpackPlugin = require('html-webpack-plugin');
+var helpers = require("./helpers.js");
 // 常用的路径
 var ROOT_PAHT = path.resolve(__dirname);
 var APP_PAHT = path.resolve(ROOT_PAHT, 'entry');
 var BUILD_PATH = path.resolve(ROOT_PAHT, 'dist');
 
 module.exports = {
-    entry: path.resolve(APP_PAHT, 'index.js'),
+    entry: helpers.getEntry(),
     output: {
         path: BUILD_PATH,
         filename: 'js/[name].js?v=[hash]',
@@ -22,10 +22,10 @@ module.exports = {
     resolve: {
         //定义模块缩写名称
         alias: {
-            'common.scss': path.join(__dirname,'/src/assets/scss/common.scss'),
-            'ui.scss': path.join(__dirname,'/src/assets/scss/ui.scss'),
-            'flex.scss': path.join(__dirname,'/src/assets/scss/flex.scss'),
-            'animate.scss': path.join(__dirname,'/src/assets/scss/animate.scss')
+            'common.scss': path.join(__dirname,'../src/assets/scss/common.scss'),
+            'ui.scss': path.join(__dirname,'../src/assets/scss/ui.scss'),
+            'flex.scss': path.join(__dirname,'../src/assets/scss/flex.scss'),
+            'animate.scss': path.join(__dirname,'../src/assets/scss/animate.scss')
         },
         //resolve 指定可以被 import 的文件后缀
         extensions: ['', '.js', '.jsx']
@@ -56,10 +56,6 @@ module.exports = {
     },
     // 配置plugin
     plugins: [
-        new HtmlWebpackPlugin({
-            template: "index.html",
-            title: 'My first react app',
-            inject: "html"
-        })
+
     ]
 }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot --port 4000 --progress --profile --colors --watch --display-error-details  --display-cached  --config ./webpack.base.config.js"
+    "dev": "webpack-dev-server --inline --hot --port 4000 --progress --profile --colors --watch --display-error-details  --display-cached  --config ./build/webpack.dev.config.js"
   },
   "author": "",
   "license": "ISC",
