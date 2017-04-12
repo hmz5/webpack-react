@@ -11,6 +11,7 @@ class AddTodo extends Component {
     		return;
     	}
     	dispatch(addTodo(this.refs.theInput.value));
+    	this.refs.theInput.value = "";
     }
 	render() {
 		return(
