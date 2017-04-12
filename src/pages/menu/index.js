@@ -39,7 +39,7 @@ class menu extends Component {
 		                <div className="demos-item f-flex">
 		                    <div className="icon menu-pull-refresh"></div>
 		                    <div className="f-flex1 components">
-		                        <span>reduxDemo</span>
+		                        <span>reduxDemo</span>(reduxDemo)
 		                    </div>
 		                </div>
 		            </Link>

@@ -17,7 +17,7 @@ class homeCom extends Component {
 		// router.replace({ pathname, query, state }) // new "location descriptor"
 	}
 	goGithub() {
-		window.open("https://github.com/fangyongbao/cubeex");
+		window.open("https://github.com/hmz5/webpack-react");
 	}
 	render() {
 		// console.log(this.context, this.props)
